@@ -14,37 +14,32 @@
  *  1- arr1 is sorted
  *  2- length of arr2 is always smaller or equal to arr1
  *  3- arr2 contains only unique items. Since it is asserted that algorithms will produce same results
- *     under the same conditions 
+ *     under the same conditions
+ *  4- I will not use any negative number in the array since the termination of the all my algorithms  
  *  ----------------------------------------------------------------------------
  */
 
 #include <iostream>
 #include "ctime"
 #include "algorithm"
+#include "fstream"
 
 
 using namespace std;
 
 int binarySearch(int arr[], int l, int r, int x, int iterationCount);
-int findSubsetLinearSearch(int * arr1, int arr1Len, int * arr2, int arr2Len , clock_t & timeAlgo1);
-int findSubsetSortedArrayBinarySearch(int * arr1, int arr1Len , int * arr2, int arr2Len , clock_t & timeAlgo2);
-int findSubsetFrequencyTable(int * arr1, int arr1Len , int * arr2, int arr2Len , clock_t & timeAlgo3);
+int findSubsetLinearSearch(int * arr1, int arr1Len, int * arr2, int arr2Len , double & timeAlgo1);
+int findSubsetSortedArrayBinarySearch(int * arr1, int arr1Len , int * arr2, int arr2Len , double & timeAlgo2);
+int findSubsetFrequencyTable(int * arr1, int arr1Len , int * arr2, int arr2Len , double & timeAlgo3);
 
 int main() {
     
-    int arr [] = {1,2,3,7,9,11,121,132};
-
-    if(binarySearch(arr,0, 8 ,11, 0)){
-        cout << "Element is found " << endl;
-    }
-
-    else {
-        cout << "Element is not found " << endl;
-    }
-
+    
 }
 
-int findSubsetLinearSearch(int * arr1, int arr1Len, int * arr2, int arr2Len , clock_t & timeAlgo1){
+int findSubsetLinearSearch(int * arr1, int arr1Len, int * arr2, int arr2Len , double & timeAlgo1){
+    
+    clock_t start = clock();
     for(int a = 0; a < arr2Len; a++){
         bool isFound = false;
         
@@ -56,31 +51,56 @@ int findSubsetLinearSearch(int * arr1, int arr1Len, int * arr2, int arr2Len , cl
         }
 
         if(isFound == false){
+            timeAlgo1 = 1000 * double (clock() - start) / CLOCKS_PER_SEC;
             return 0; // it shows that there is no match and the subsets are not unique
+        }
+    }
+
+    timeAlgo1 = 1000 * double (clock() - start) / CLOCKS_PER_SEC;
+    return 1;
+}
+
+int findSubsetSortedArrayBinarySearch(int * arr1, int arr1Len , int * arr2, int arr2Len , double & timeAlgo2){
+    sort(arr2, arr2 + arr2Len); // Since the sorting is not part of the homework i did use the standart library
+    for(int a = 0; a < arr2Len; a++){
+        if(binarySearch(arr1, 0, arr1Len - 1, arr2[a],0) == -1){
+            return 0;
         }
     }
     return 1;
 }
 
-int findSubsetSortedArrayBinarySearch(int * arr1, int arr1Len , int * arr2, int arr2Len , clock_t & timeAlgo2){
-    sort(arr2, arr2 + arr2Len); // Since the sorting is not part of the homework i did use the standart library
+int findSubsetFrequencyTable(int * arr1, int arr1Len , int * arr2, int arr2Len , double & timeAlgo3, int range){
+    clock_t start = clock();
+    int * arr1FrequencyTable = new int [];
+
+    int * arr1FrequencyTable = new int [range];
+    int * arr2FrequencyTable = new int [range];
+
+    for(int a = 0; a < arr1Len; a++){
+        arr1FrequencyTable[arr1[a]]++;
+    }
+
+    for(int a = 0; a < arr2Len; a++){
+        arr2FrequencyTable[arr2[a]]++;
+    }
+
+    for(int a = 0; a < arr2Len; a++){
+        if(arr2FrequencyTable[arr2[a]] != 0 && arr1FrequencyTable[arr2[a]] == 0){
+            timeAlgo3 = 1000 * double(clock() - start) / CLOCKS_PER_SEC;
+            return 0;
+        }
+    }
+
+    timeAlgo3 = 1000 * double(clock() - start) / CLOCKS_PER_SEC;
+    return 1;
 }
 
-int findSubsetFrequencyTable(int * arr1, int arr1Len , int * arr2, int arr2Len , clock_t & timeAlgo3){
-
-}
-
-int binarySearch(int arr[], int l, int r, int x, int iterationCount)
-{
+int binarySearch(int arr[], int l, int r, int x, int iterationCount){
     if (r >= l) {
 
         int mid = l + (r - l) / 2;
 
-        cout << "-----------------------------------------------------------------------------" << endl;
-        cout << "Iteration number is: " << iterationCount << endl;
-        cout << "pivot point element number is: " << mid << endl;
-        cout << "pivot point element choosed is: " << arr[mid] << endl;
-        cout << "-----------------------------------------------------------------------------" << endl;
 
         iterationCount++;
 
