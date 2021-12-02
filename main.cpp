@@ -34,7 +34,10 @@ int findSubsetFrequencyTable(int * arr1, int arr1Len , int * arr2, int arr2Len ,
 
 int main() {
     
-    
+    ofstream myfile;
+    myfile.open("Sample File");
+    myfile << "Writing something\n";
+    myfile.close();
 }
 
 int findSubsetLinearSearch(int * arr1, int arr1Len, int * arr2, int arr2Len , double & timeAlgo1){
@@ -72,7 +75,6 @@ int findSubsetSortedArrayBinarySearch(int * arr1, int arr1Len , int * arr2, int 
 
 int findSubsetFrequencyTable(int * arr1, int arr1Len , int * arr2, int arr2Len , double & timeAlgo3, int range){
     clock_t start = clock();
-    int * arr1FrequencyTable = new int [];
 
     int * arr1FrequencyTable = new int [range];
     int * arr2FrequencyTable = new int [range];
