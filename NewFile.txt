@@ -1,0 +1,40 @@
+Arr1 Length: 100000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 100000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 100000	Arr2 Length: 1000	Time of Algorithm: 1			Algorithm Result: 0
+
+Arr1 Length: 200000	Arr2 Length: 1000	Time of Algorithm: 2			Algorithm Result: 0
+Arr1 Length: 200000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 200000	Arr2 Length: 1000	Time of Algorithm: 1			Algorithm Result: 0
+
+Arr1 Length: 300000	Arr2 Length: 1000	Time of Algorithm: 5			Algorithm Result: 0
+Arr1 Length: 300000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 300000	Arr2 Length: 1000	Time of Algorithm: 1			Algorithm Result: 0
+
+Arr1 Length: 400000	Arr2 Length: 1000	Time of Algorithm: 4			Algorithm Result: 0
+Arr1 Length: 400000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 400000	Arr2 Length: 1000	Time of Algorithm: 1			Algorithm Result: 0
+
+Arr1 Length: 500000	Arr2 Length: 1000	Time of Algorithm: 13			Algorithm Result: 0
+Arr1 Length: 500000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 500000	Arr2 Length: 1000	Time of Algorithm: 2			Algorithm Result: 0
+
+Arr1 Length: 600000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 600000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 600000	Arr2 Length: 1000	Time of Algorithm: 3			Algorithm Result: 0
+
+Arr1 Length: 700000	Arr2 Length: 1000	Time of Algorithm: 16			Algorithm Result: 0
+Arr1 Length: 700000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 700000	Arr2 Length: 1000	Time of Algorithm: 2			Algorithm Result: 0
+
+Arr1 Length: 800000	Arr2 Length: 1000	Time of Algorithm: 19			Algorithm Result: 0
+Arr1 Length: 800000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 800000	Arr2 Length: 1000	Time of Algorithm: 4			Algorithm Result: 0
+
+Arr1 Length: 900000	Arr2 Length: 1000	Time of Algorithm: 6			Algorithm Result: 0
+Arr1 Length: 900000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 900000	Arr2 Length: 1000	Time of Algorithm: 5			Algorithm Result: 0
+
+Arr1 Length: 1000000	Arr2 Length: 1000	Time of Algorithm: 18			Algorithm Result: 0
+Arr1 Length: 1000000	Arr2 Length: 1000	Time of Algorithm: 0			Algorithm Result: 0
+Arr1 Length: 1000000	Arr2 Length: 1000	Time of Algorithm: 3			Algorithm Result: 0
+
