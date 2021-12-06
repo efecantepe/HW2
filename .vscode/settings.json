@@ -4,6 +4,8 @@
         "*.rmd": "markdown",
         "filesystem": "cpp",
         "iosfwd": "cpp",
-        "iostream": "cpp"
-    }
+        "iostream": "cpp",
+        "xlocale": "cpp"
+    },
+    "python.pythonPath": ".venv\\Scripts\\python.exe"
 }
