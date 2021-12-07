@@ -199,12 +199,12 @@ void startProcess(ofstream & myfile){
         algo6Result = findSubsetFrequencyTable(arr1, arr1Length, arr2, arr2Length, timeAlgo6, range);
 
 
-        myfile <<  arr1Length << "\n" << arr2Length << "\n" << timeAlgo1 << "\n"<< "**********************\n"  
-               <<  arr1Length << "\n" << arr2Length << "\n" << timeAlgo2 << "\n"<< "**********************\n"   
-               <<  arr1Length << "\n" << arr2Length << "\n" << timeAlgo3 << "\n"<< "**********************\n"  
-               <<  arr1Length << "\n" << arr3Length << "\n" << timeAlgo4 << "\n"<< "**********************\n"  
-               <<  arr1Length << "\n" << arr3Length << "\n" << timeAlgo5 << "\n"<< "**********************\n"  
-               <<  arr1Length << "\n" << arr3Length << "\n" << timeAlgo6 << "\n"<< "**********************\n"; 
+        myfile <<  timeAlgo1 << "\n"    
+               <<  timeAlgo2 << "\n"   
+               <<  timeAlgo3 << "\n"  
+               <<  timeAlgo4 << "\n"  
+               <<  timeAlgo5 << "\n"  
+               <<  timeAlgo6 << "\n"; 
                
         delete [] arr1;
         delete [] arr2;
